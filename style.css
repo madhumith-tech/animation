@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.sky {
+    height: 40%;
+    background: linear-gradient(to bottom, #6ec6ff, #bde0ff);
+}
+
+
+.grass {
+    height: 30%;
+    background: #2ecc71;
+}
+
+
+.road {
+    height: 30%;
+    background: #444;
+    border-top: 10px solid #777;
+    border-bottom: 10px solid #777;
+    position: relative;
+}
+
+
+.lines {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border-top: 6px dashed white;
+}
+
+
+.bike {
+    position: absolute;
+    bottom: 5px;
+    left: -200px;
+    width: 180px;
+    animation: ride 6s linear infinite;
+}
+
+@keyframes ride {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+}
